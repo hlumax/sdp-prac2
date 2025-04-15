@@ -7,4 +7,19 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+  public void sumElementsTest() {
+        //Arrange: set up some values and an expected output 
+        int []a = {10,20,30,40,50};
+        int []b = {1,3,4}; //so b specifies indexes 1, 3, 4
+
+        //expected output 
+        int expectedOutput = 110; //20 + 40 + 50
+
+        //Act: call the function or method you want to test
+        int actualOutput = SimpleFunctions.sumElements(a, b);
+        
+        //Assert: make sure the result is what we expect.
+        assertEquals(expectedOutput, actualOutput);
+
+    }
 }
